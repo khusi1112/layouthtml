@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .baba{
+            display: grid;
+            height: 100vh;
+            gap: 15px;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        .box1{
+            background-color: #c0c0c0;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .box2,.box3,.box4,.box5,.box6{
+            /* border: 1px solid red; */
+            background-color: #c0c0c0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box2{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .box3{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 4;
+            grid-row-end: 8;
+        }
+        .box4{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 8;
+            grid-row-end: 25;
+        }
+        .box5{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            grid-row-start: 8;
+            grid-row-end: 25;
+        }
+        .box6{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 25;
+            grid-row-end: 26
+    ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="baba">
+            <div class=" grid-item- box1">Logo</div>
+            <div class=" grid-item- box2">Navigation</div>
+            <div class=" grid-item- box3">Header / Benner</div> 
+            <div class=" grid-item-  box4">Skle Bar</div>
+            <div class=" grid-item- box5">Body Area</div>
+            <div class=" grid-item- box6">Footer</div>    
+    </div>
+
+    
+</body>
+</html>

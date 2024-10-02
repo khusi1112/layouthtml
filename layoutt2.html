@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+            height: 100vh;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        .c1,.b1,.b2,.b3,.jhole,.footer{
+            /* border: 1px solid rebeccapurple; */
+            background-color: #c0c0c0;
+            justify-content: center;
+              align-items: center;
+             display: flex;
+     }
+     .logo{
+        padding: 30px;
+     }
+       .c1{
+            /* border: 1px solid greenyellow; */
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .soly{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row-start: 3;
+            grid-row-end:11 ;
+            gap: 20px;
+        }
+        .b1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 11;
+            grid-row-end: 15;
+
+        }
+        .b2{
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 11;
+            grid-row-end: 15;
+        }
+        .b3{
+            grid-column-start: 9;
+            grid-column-end: 13;
+            grid-row-start: 11;
+            grid-row-end: 15;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row-start: 15;
+            grid-row-end: 16;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="c1">
+        <div class="logo">Logo</div>
+        <div>Navigation</div>
+    </div>
+        <!-- .soly>jhole*16 -->
+           <!--.jhole*16-->
+     <div class="soly">
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+         <div class="jhole"></div>
+     </div>
+     <!-- .b1+.b2+.b3 -->
+     <div class="b1">Box1</div>
+     <div class="b2">Box2</div>
+     <div class="b3">Box3</div>
+     <div class="footer">Footer</div>
+  </div>
+</body>
+</html>

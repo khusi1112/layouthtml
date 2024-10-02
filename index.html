@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .baba{
+            display: grid;
+                 height: 100vh;
+                 gap: 10px;
+                 column-gap: 30px;
+                 font-size: x-large;
+                 font-weight: 700;
+           }
+           .box-1,.box-3,.box-4,.box-5,.box-6,.box-7,.box-8{
+            /* border: 1px solid red; */
+            background-color: #c0c0c0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .box-1{
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            
+           }
+           .box-3{
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row-start: 3;
+            grid-row-end: 7;
+           }
+           .box-4{
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row-start: 7;
+            grid-row-end: 10;
+           }
+           .box-5{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 10;
+            grid-row-end: 25;
+           }
+           .box-6{
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 10;
+            grid-row-end: 25;
+           }
+           .box-7{
+            grid-column-start: 9;
+            grid-column-end:13 ;
+            grid-row-start: 10;
+            grid-row-end: 25;
+           }
+           .box-8{
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row-start: 25;
+            grid-row-end: 26;
+           }
+        .one{
+        margin-right: 1100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="baba">
+        <!-- <div class="box-1"> -->
+        <div class="grid-item- box-1">
+            <div class="one">Logo</div>
+            <div class="on">Navigation</div>
+        </div>
+
+        <!-- </div> -->
+        <div class=" grid-item- box-3">header / banner</div>
+        <div class="grid-item- box-4">Intro Text Area</div>
+        <div class="grid-item- box-5">box 1</div>
+        <div class="grid-item- box-6">box 2</div>
+        <div class="grid-item- box-7">Box 3</div>
+        <div class="grid-item- box-8">Footer</div>
+    </div>
+</body>
+</html>
